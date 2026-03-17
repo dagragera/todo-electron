@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ToDo Electron</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header class="header">
+        <h1>ToDo</h1>
+        <p class="sub">Electron + IPC + guardado local (JSON)</p>
+      </header>
+
+      <form id="form" class="row">
+        <input id="text" type="text" placeholder="Añade una tarea..." autocomplete="off" />
+        <button class="btn" type="submit">Añadir</button>
+      </form>
+
+      <div class="meta">
+        <span id="count">0 pendientes · 0 total</span>
+        <button id="clearDone" class="btn ghost" type="button">Limpiar hechas</button>
+      </div>
+
+      <ul id="list" class="list" aria-label="Lista de tareas"></ul>
+
+      <footer class="footer">
+        <small>Se guarda automáticamente en el equipo.</small>
+      </footer>
+    </main>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
