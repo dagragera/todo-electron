@@ -28,3 +28,14 @@ La aplicación está hecha con Electron, utilizando HTML, CSS y JavaScript.
 ```bash
 npm install
 npm start
+
+### Instalación como aplicación (.deb)
+
+Se ha generado un instalador para sistemas basados en Debian:
+
+```bash
+sudo dpkg -i todo-electron_1.0.0_amd64.deb
+sudo apt -f install -y
+```
+
+Una vez instalado, la aplicación aparece en el menú del sistema.
